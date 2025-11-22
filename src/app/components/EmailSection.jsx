@@ -39,7 +39,7 @@ const EmailSection = () => {
   };
 
   return (
-    <section id="contact" className="relative py-24 px-4 overflow-hidden ">
+    <section id="contact" className="relative py-15 overflow-hidden ">
       {/* Fond animé subtil */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 -left-40 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl animate-pulse" />

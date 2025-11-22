@@ -91,8 +91,8 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center py-10 lg:py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-12 gap-8 max-w-7xl mx-auto px-4 w-full">
+    <section className="min-h-screen flex items-center justify-center py-2 lg:py-16">
+      <div className="grid grid-cols-1 sm:grid-cols-12 gap-8 max-w-7xl mx-auto px-3 sm:px-8 lg:px-12 xl:px-20 2xl:px-24 w-full">
         {/* Texte à gauche */}
         <motion.div
           initial={{ opacity: 0, x: -80 }}
@@ -102,7 +102,7 @@ const HeroSection = () => {
         >
           <h1 className="text-white font-extrabold leading-none">
             {/* "Salut, je suis" plus proche */}
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-amber-600 text-4xl sm:text-5xl lg:text-7xl mb-4">
+            <span className="block text-transparent bg-clip-text bg-white text-3xl sm:text-5xl lg:text-7xl mb-4">
               Salut, je suis
             </span>
 
@@ -136,7 +136,7 @@ const HeroSection = () => {
           </div>
 
           <p className="text-gray-300 text-lg sm:text-xl lg:text-2xl mb-10 max-w-2xl mx-auto sm:mx-0">
-            Créateur multidisciplinaire passionné par le code, le design et l'expérience utilisateur.<br />
+            Créateur multidisciplinaire passionné par le code, le design et expérience utilisateur.<br />
             Je transforme des idées en applications mobiles puissantes et en interfaces qui marquent les esprits.
           </p>
 
@@ -170,7 +170,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.8, rotate: -8 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 1.1, delay: 0.3 }}
-          className="col-span-5 flex justify-center items-center"
+          className="col-span-7 lg:col-span-5 flex justify-center items-center"
         >
           <div className="relative group w-full max-w-[280px] sm:max-w-[400px] lg:max-w-[460px]">
             {/* Glow jaune/orange animé */}

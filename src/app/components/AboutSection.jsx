@@ -28,7 +28,7 @@ const AboutSection = () => {
   const [activeTab, setActiveTab] = useState("story");
 
   return (
-    <section className="py-16 md:py-24 px-4 text-white" id="about">
+    <section className="py-16 md:py-24 px-3 text-white" id="about">
       <div className="max-w-7xl mx-auto">
 
         {/* Titre */}
