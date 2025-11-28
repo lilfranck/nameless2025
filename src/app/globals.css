@@ -2,26 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* ON FORCE LE FOND SUR TOUT LE SITE */
+html,
+body,
+#__next {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* MODE SOMBRE PAR DÉFAUT */
+html {
+  background-color: #000000;
+  color: #ffffff;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* MODE CLAIR → quand la classe "dark" est ABSENTE */
+html:not(.dark) {
+  background-color: #f9fafb;
+  color: #111111;
+}
+
+/* ON FORCE AUSSI LE FOND SUR LE CONTAINER PRINCIPAL DE NEXT.JS */
+#__next {
+  background-color: inherit !important;
+}
+
+/* Transition fluide */
+*,
+*::before,
+*::after {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+/* ==================================
+   ADAPTATIONS VISUELLES MODE CLAIR
+   ================================== */
+html:not(.dark) .bg-black,
+html:not(.dark) .bg-black {
+  background-color: #ffffff !important;
+}
+
+html:not(.dark) .bg-gray-900,
+html:not(.dark) .bg-gray-800 {
+  background-color: #f8fafc !important;
+}
+
+html:not(.dark) .bg-gray-900\/50,
+html:not(.dark) .bg-gray-800\/50 {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+html:not(.dark) .text-gray-300 {
+  color: #64748b !important;
+}
+html:not(.dark) .text-gray-400 {
+  color: #94a3b8 !important;
+}
+
+html:not(.dark) .border-gray-700,
+html:not(.dark) .border-gray-800 {
+  border-color: #e2e8f0 !important;
 }

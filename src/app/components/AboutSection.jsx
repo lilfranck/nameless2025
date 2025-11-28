@@ -78,7 +78,7 @@ const AboutSection = () => {
               <div className="relative group">
                 <div className="absolute -inset-3 bg-gradient-to-r from-yellow-400 via-orange-500 to-amber-600 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000" />
                 <Image
-                  src="/images/ta-photo.png"
+                  src="/images/ZORBES.png"
                   alt="NAMELESS – Youmbi Eloise"
                   width={500}
                   height={580}
